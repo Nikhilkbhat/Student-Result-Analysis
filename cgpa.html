@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>VTU Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+
+    <!-- Bootstrap Core CSS -->
+    <link href="static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="static/css/style.css" rel='stylesheet' type='text/css' />
+  
+
+    
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                   <img src="image/new.png" height="60px" width="60px">  <a class="navbar-brand" href="https://vtu.ac.in/">
+                        </a>
+                    <button class="navbar-toggler ml-lg-auto ml-sm-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-center ml-auto">
+                         
+                          <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+                              <a class="hover-fill" aria-pressed="false" href="sgpa.html" data-txthover="SGPA CALCULATOR">SGPA CALCULATOR</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="hover-fill" aria-pressed="false" href="#" data-txthover="CGPA CALCULATOR">CGPA CALCULATOR</a>
+                          </li>
+                        </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- //header -->
+    <!-- banner -->
+    <div >
+        <div class="container">
+          <section class="">
+                <div class="container py-xl-5">
+                    <div class="w3l_header mb-sm-5 pb-3">
+                <h3 class="text-center">CGPA Calculator</h3>
+                    </div>
+            </div>
+              <div class="container">
+                <div class="login mb-sm-5 px-4 mx-auto mw-100">
+                <form id="cgpac" action="#" method="post">
+                  <div class="row">
+                  <div class="col-5">
+                    <fieldset>
+                        <div class="form-row">
+                          <div class="form-group col-md-6 mb-4">
+                              <label class="col-form-label">1st Sem</label>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <input type="text" class="form-control" id="1stSem" name="1stSem" placeholder="1st Sem" required>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6 mb-4">
+                              <label class="col-form-label">3rd Sem</label>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <input type="text" class="form-control" id="3rdSem" name="3rdSem" placeholder="3rd Sem" required>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6 mb-4">
+                              <label class="col-form-label">5th Sem</label>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <input type="text" class="form-control" id="5thSem" name="5thSem" placeholder="5th Sem" required>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6 mb-4">
+                              <label class="col-form-label">7th Sem</label>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <input type="text" class="form-control" id="7thSem" name="7thSem" placeholder="7th Sem" required>
+                          </div>
+                        </div>
+                  </fieldset>
+                </div>
+                <div class="col-2">
+                </div>
+                <div class="col-5">
+                  <fieldset>
+                      <div class="form-row">
+                        <div class="form-group col-md-6 mb-4">
+                            <label class="col-form-label">2nd Sem</label>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <input type="text" class="form-control" id="2ndSem" name="2ndSem" placeholder="2nd Sem" required>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6 mb-4">
+                            <label class="col-form-label">4th Sem</label>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <input type="text" class="form-control" id="4thSem" name="4thSem" placeholder="4th Sem" required>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6 mb-4">
+                            <label class="col-form-label">6th Sem</label>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <input type="text" class="form-control" id="6thSem" name="6thSem" placeholder="6th Sem" required>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6 mb-4">
+                            <label class="col-form-label">8th Sem</label>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <input type="text" class="form-control" id="8thSem" name="8thSem" placeholder="8th Sem" required>
+                        </div>
+                      </div>
+                </fieldset>
+                    <br>
+                  </div>
+                  </div>
+                    <div class='text-center' style="margin-top: 10px">
+                        <button type="submit" class="get-started-btn" style="cursor: pointer;">Calculate CGPA</button>
+                    </div>
+                </form>
+                </div>
+              </div>
+              <div class="row">
+              <div class="col">
+                <fieldset disabled>
+                  <div class="container" style="margin:0 auto; width: 50%;">
+                      <div class="form-row">
+                        <div class="form-group col-md-6 mb-4">
+                            <label class="col-form-label">CGPA</label>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <input type="text" id="cgpa" class="form-control" placeholder="CGPA">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                          <div class="form-group col-md-6 mb-4">
+                              <label class="col-form-label">Percentage</label>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                              <input type="text" id="percentage" class="form-control" placeholder="Percentage">
+                          </div>
+                      </div>
+                    </div>
+                </fieldset>
+              </div>
+            </div>
+
+        </section>
+    </div>
+    </div>
+    <!-- js -->
+   
+  <script type="text/javascript">
+    document.getElementById('cgpac').onsubmit = function() {
+        var tc=175;
+        var sum=0;
+        var cgpa;
+        const credits = [20,20,24,24,25,24,20,18]
+        const sem = ["1stSem", "2ndSem", "3rdSem", "4thSem", "5thSem", "6thSem", "7thSem", "8thSem"];
+        sem.forEach(myFunction);
+
+        function myFunction(value, index, array) {
+          var g = document.getElementById(value).value;
+          if (g ==0){
+            tc = tc-credits[index];
+          }
+          else{
+            sum+= g*credits[index];
+          }
+        }
+        cgpa = sum/tc;
+        document.getElementById('cgpa').value = cgpa.toFixed(2);
+        percentage = (cgpa-0.75)*10;
+        document.getElementById('percentage').value = percentage.toFixed(2);
+        return false;
+    };
+  </script>
+  
+  
+</body>
+</html>

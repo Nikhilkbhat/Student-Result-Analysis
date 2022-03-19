@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>VTU Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+   
+
+    <link href="static/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="static/css/style.css" rel='stylesheet' type='text/css' />
+   
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <img src="image/new.png" height="60px" width="60px"class="navbar-brand"><a href="https://vtu.ac.in/"></a>
+                    <button class="navbar-toggler ml-lg-auto ml-sm-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-center ml-auto">
+                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-4">
+                                <a class="hover-fill" aria-pressed="false" href="sgpa.html" data-txthover="SGPA CALCULATOR">SGPA CALCULATOR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="hover-fill" aria-pressed="false" href="cgpa.html" data-txthover="CGPA CALCULATOR">CGPA CALCULATOR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+  
+    <div >
+		<div class="container">
+          <section class=py-5>
+        		<div class="container py-xl-5">
+        			<div class="w3l_header mb-sm-5 pb-3">
+                <h3 class="text-center">SGPA Calculator</h3>
+        			</div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="container">
+                <div class="login mb-sm-5 px-4 mx-auto mw-100">
+                <form id="choose" action="#" method="post">
+                    <fieldset>
+                        <div class="form-row">
+                        <div class="form-group col-md-6 mb-4">
+                            <label class="col-form-label">Sem</label>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <select class="form-control" id="sem">
+                       
+                            <option value="3rd_sem">3rd sem</option>
+                            <option value="4th_sem">4th sem</option>
+                            
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6 mb-4">
+                            <label class="col-form-label">Branch</label>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <select class="form-control" id="branch">
+                            
+                            <option value="16">B.E-INFORMATION SCIENCE & ENGINEERING</option>
+                         
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6 mb-4">
+                            <label class="col-form-label">Scheme</label>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <select class="form-control" id="scheme">
+                            <option value="2018_scheme">2018</option>
+              
+                          </select>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <br>
+
+                    <div class='text-center' style="margin-top: 10px">
+                        <button type="submit" class="get-started-btn" style="cursor: pointer;">Submit</button>
+                    </div>
+                </form>
+          </section>
+		</div>
+    </div>
+
+  <script type="text/javascript">
+    document.getElementById('choose').onsubmit = function() {
+        if (document.getElementById('sem').value=="3th_sem" && document.getElementById('scheme').value=="2018_scheme" && document.getElementById('branch').value == 16) {
+            window.location.replace("calc/"+document.getElementById('scheme').value+'-'+document.getElementById('sem').value+'s.html');
+            return false;
+        }
+        window.location.replace("calc/"+document.getElementById('scheme').value+'-'+document.getElementById('sem').value+'.html?br='+document.getElementById('branch').value);
+        return false;
+    };
+  </script>
+	
+
+</body>
+</html>
